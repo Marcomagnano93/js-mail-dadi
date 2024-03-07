@@ -6,7 +6,9 @@ let registeredMailControl = false; //string
 const userMail = document.getElementById("useremail");
 
 const inputMail = userMail.value; //string
-//controlla se la mail inserita dall'utente è tra quelle nell'elenco
+
+
+
     //- aggiungi un evento per avviare il check
 
 
@@ -20,7 +22,7 @@ const inputMail = userMail.value; //string
 
 
 
-
+//controlla se la mail inserita dall'utente è tra quelle nell'elenco
         // - crea un for loop per cercare la mail inserita dall'utente tra quelle registrate
         for(let i = 0; i < registeredMails.length; i++){
             // console.log(registeredMails[i])
