@@ -2,30 +2,39 @@
 //Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 //crea due variabili con il numero estratto per i due giocatori
-let numberA = [ ]; 
-
-let numberB = [ ]; 
-
-const randomNumberA = Math.floor(Math.random() * 6) + 1;
-
-    numberA.push(randomNumberA);
-
-    console.log("Giocatore A ottiene: " + numberA)
 
 
-const randomNumberB = Math.floor(Math.random() * 6) + 1;
+ const checkClick = document.getElementById("check_btn")
 
-    numberB.push(randomNumberB);
+    checkClick.addEventListener(
+        function()
+        {
+        let numberA = [ ]; 
 
-    console.log("Giocatore B ottiene: " + numberB)
+        let numberB = [ ]; 
+        
+        const randomNumberA = Math.floor(Math.random() * 6) + 1;
+        
+            numberA.push(randomNumberA);
+        
+            console.log("Giocatore A ottiene: " + numberA)
+        
+        
+        const randomNumberB = Math.floor(Math.random() * 6) + 1;
+        
+            numberB.push(randomNumberB);
+        
+            console.log("Giocatore B ottiene: " + numberB)
+        
+            if(numberA > numberB){
+                console.log("Giocatore A vince!")
+            }
+            else if(numberA === numberB){
+                console.log("Pareggio!")
+            }
+            else{
+                console.log("Giocatore B vince!")
+            }
+        
 
-    if(numberA > numberB){
-        console.log("Giocatore A vince!")
-    }
-    else if(numberA === numberB){
-        console.log("Pareggio!")
-    }
-    else{
-        console.log("Giocatore B vince!")
-    }
-
+    })
