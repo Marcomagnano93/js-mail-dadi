@@ -3,7 +3,9 @@
 
 //crea due variabili con il numero estratto per i due giocatori
 
+let checkBtn = document.querySelector(".trow_btn");
 
+    checkBtn.addEventListener("click", function(){
  
         let numberA
 
@@ -32,5 +34,5 @@
                 console.log("Giocatore B vince!")
             }
         
-
+        })
 
