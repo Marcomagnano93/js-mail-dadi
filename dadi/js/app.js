@@ -25,13 +25,13 @@ let checkBtn = document.querySelector(".trow_btn");
             console.log("Giocatore B ottiene: " + numberB)
         
             if(numberA > numberB){
-                console.log("Giocatore A vince!")
+                alert("Giocatore A vince!")
             }
             else if(numberA === numberB){
-                console.log("Pareggio!")
+                alert("Pareggio!")
             }
             else{
-                console.log("Giocatore B vince!")
+                alert("Giocatore B vince!")
             }
         
         })
