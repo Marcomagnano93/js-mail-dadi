@@ -3,14 +3,14 @@
 // stampa un messaggio appropriato sull’esito del controllo.
 const registeredMails = ["pincopallo@gmail.com", "gigi@gmail.com", "silvestro@gmail.com"];
 
-
+const userMail = document.getElementById("useremail");
+const inputMail = userMail.value; //string
 
 let checkMail = false;
 
 for (let i = 0; i < registeredMails.length; i++) {
 
-    const userMail = document.getElementById("useremail");
-    const inputMail = userMail.value; //string
+
     // console.log(registeredMails[i])
 
     const checkedMail = registeredMails[i];
@@ -23,9 +23,10 @@ for (let i = 0; i < registeredMails.length; i++) {
    }
 
 
-   if(checkMail = true){
+   if(checkMail === true){
     console.log("Benvenuto!")
    }
+
    else {
     alert("Non sei ancora registrato! Iscriviti per accedere")
    }
@@ -34,10 +35,8 @@ for (let i = 0; i < registeredMails.length; i++) {
 
 
 
-
-   //METODO INCLUDES
-
-   //crea un array con l'elenco di mail registrate
+//METODO INCLUDES
+//crea un array con l'elenco di mail registrate
 // let registeredMails = ["pincopallo@gmail.com", "gigi@gmail.com", "silvestro@gmail.com"];
 
 
