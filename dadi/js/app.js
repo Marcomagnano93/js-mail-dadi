@@ -4,25 +4,21 @@
 //crea due variabili con il numero estratto per i due giocatori
 
 
- const checkClick = document.getElementById("check_btn")
+ 
+        let numberA = " " 
 
-    checkClick.addEventListener(
-        function()
-        {
-        let numberA = [ ]; 
-
-        let numberB = [ ]; 
+        let numberB = " " 
         
         const randomNumberA = Math.floor(Math.random() * 6) + 1;
         
-            numberA.push(randomNumberA);
+            numberA = randomNumberA;
         
             console.log("Giocatore A ottiene: " + numberA)
         
         
         const randomNumberB = Math.floor(Math.random() * 6) + 1;
         
-            numberB.push(randomNumberB);
+            numberB = randomNumberB;
         
             console.log("Giocatore B ottiene: " + numberB)
         
@@ -37,4 +33,4 @@
             }
         
 
-    })
+
