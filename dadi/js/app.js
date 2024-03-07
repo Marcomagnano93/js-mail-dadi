@@ -5,9 +5,9 @@
 
 
  
-        let numberA = " " 
+        let numberA
 
-        let numberB = " " 
+        let numberB
         
         const randomNumberA = Math.floor(Math.random() * 6) + 1;
         

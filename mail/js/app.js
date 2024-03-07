@@ -1,25 +1,24 @@
 // Chiedi all’utente la sua email,
 // controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull’esito del controllo.
-let registeredMails = ["pincopallo@gmail.com", "gigi@gmail.com", "silvestro@gmail.com"];
+const registeredMails = ["pincopallo@gmail.com", "gigi@gmail.com", "silvestro@gmail.com"];
 
-const userMail = document.getElementById("useremail");
-const inputMail = userMail.value; //string
+
 
 let checkMail = false;
 
-for(let i = 0; i < registeredMails.length; i++){
+for (let i = 0; i < registeredMails.length; i++) {
 
-    console.log(registeredMails[i])
+    const userMail = document.getElementById("useremail");
+    const inputMail = userMail.value; //string
+    // console.log(registeredMails[i])
 
     const checkedMail = registeredMails[i];
 
-    if(inputMail === checkedMail){
+    if(checkedMail === inputMail){
         checkMail = true;
     }
-    else {
-        checkMail = false;
-    }
+
     
    }
 
