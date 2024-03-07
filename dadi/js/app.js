@@ -16,6 +16,9 @@ let checkBtn = document.querySelector(".trow_btn");
             numberA = randomNumberA;
         
             console.log("Giocatore A ottiene: " + numberA)
+
+            const playerA = document.getElementById("playerA");
+            playerA.innerHTML = (numberA)
         
         
         const randomNumberB = Math.floor(Math.random() * 6) + 1;
@@ -23,9 +26,13 @@ let checkBtn = document.querySelector(".trow_btn");
             numberB = randomNumberB;
         
             console.log("Giocatore B ottiene: " + numberB)
+
+            const playerB = document.getElementById("playerB");
+            playerB.innerHTML = (numberB)
         
             if(numberA > numberB){
                 alert("Giocatore A vince!")
+                
             }
             else if(numberA === numberB){
                 alert("Pareggio!")
